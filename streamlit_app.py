@@ -5,6 +5,12 @@ import numpy as np
 from sklearn.ensemble import RandomForestRegressor
 from datetime import datetime
 import calendar
+import pickle
+
+# Load trained model
+with open('inr_model.pkl', 'rb') as file:
+    model = pickle.load(file)
+
 
 # Title
 st.title("USD to INR Exchange Rate Predictor")

@@ -77,4 +77,3 @@ with open('inr_model.pkl', 'wb') as file:
     pickle.dump(model, file)
 
 print("Trained model saved as inr_model.pkl")
-
